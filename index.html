@@ -11,23 +11,27 @@
       border-radius: 8px;
     }
     .flex-container {
+      align-items: center;
+      animation-name: scale-in;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
       display: flex;
       height: 100vh;
       justify-content: center;
-      align-items: center;
     }
+    @keyframes scale-in {
+      0% {transform: scale(0);}
+      100% {transform: scale(1);}
   </style>
 </head>
 <body>
 
 <div class="flex-container">
   <center>
-    <div class="viewer">
-      <video autoplay loop>
-        <source src="ProstituteLaundry.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+    <video class="viewer" autoplay>
+      <source src="ProstituteLaundry.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </center>
 </div>
 
