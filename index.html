@@ -13,7 +13,7 @@
     .flex-container {
       align-items: center;
       animation-name: scale-in;
-      animation-duration: 1s;
+      animation-duration: 0.3s;
       animation-timing-function: ease-out;
       display: flex;
       height: 100vh;
@@ -21,6 +21,8 @@
     }
     @keyframes scale-in {
       0% {transform: scale(0);}
+      90% {transform: scale(0.9);}
+      95% {transform: scale(0.8);}
       100% {transform: scale(1);}
   </style>
 </head>
